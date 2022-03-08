@@ -31,7 +31,7 @@ const Values = {
     name:() => 'Walter',
     val1:() => 0,
     val2:() => 1,
-    result:() => Data.val1 + Data.val2
+    result:() => WT_Data.val1 + WT_Data.val2
 }
 
 
