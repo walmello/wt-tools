@@ -64,23 +64,23 @@ const WT_Initialize = (Values) => {
             
 
             item.oninput = () => {                
-                Data[variable] = item.value
+                WT_Data[variable] = item.value
             }
-            item.value = Data[variable]
+            item.value = WT_Data[variable]
         })
 
         Each('[wt-edit]', item => {
             let variable = item.getAttribute('wt-edit')
             
             item.oninput = () => {
-                Data[variable] = item.innerText
+                WT_Data[variable] = item.innerText
             }
-            item.innerText = Data[variable]
+            item.innerText = WT_Data[variable]
         })
 
         Each('[wt-text]', item => {
             let variable = item.getAttribute('wt-text')            
-            item.innerText = Data[variable]
+            item.innerText = WT_Data[variable]
         })
     })		
 
