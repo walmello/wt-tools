@@ -7,5 +7,3 @@ function wt_dark_toggle(){
         item.classList.toggle('wt_dark')
     })
 }
-
-wt_dark_toggle()
